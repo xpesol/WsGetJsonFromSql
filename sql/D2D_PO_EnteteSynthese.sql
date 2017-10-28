@@ -2,7 +2,7 @@
 SELECT
 pd.set_article_acheteur as "sku", 
 '' as "campagne comm", 
-SUM(pd.total_units) as "qtee cdee", 
+SUM(pd.total_units) as "qteeeee cdee", 
 '' as "Reliquat"
 FROM po_header as ph
 LEFT JOIN po_transport as pt
