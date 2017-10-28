@@ -67,14 +67,10 @@ $arrayMain = array(
     "\"format\"" => "json",
     "\"timestamp\"" => date("Ymd-H:i:s"),
     "\"parameters\"" => array(
-        "\"columns\"" => "columns=code_port,nom_pays,nom_port,is_pol,is_pod",
+        "\"columns\"" => "columns=num_po,sku",
         "\"filters\"" => array(
-            "portcode=[a-Z]",
-            "countryname=[a-Z]",
-            "portname=[a-Z]",
-            "ispol=[TRUE|FALSE]",
-            "ispod=[TRUE|FALSE]",
-            "ext=[extension]( pour une génération  )",
+            "num_po=[a-Z]",
+            "sku=[a-Z]",
             "isonlyresult=[TRUE|FALSE]"
         )
     ),
