@@ -35,6 +35,7 @@ $num_po = $_GET["num_po"];
 $sku = $_GET["sku"];
 
 $sqlr = file_get_contents('sql/' . $sSqlrFilePath, FILE_USE_INCLUDE_PATH);
+print $sqlr;
 $aVars = getSqlrVars();
 $sqlr = replace_num_po_in_sql($aVars, $sqlr);
 print $sqlr;
