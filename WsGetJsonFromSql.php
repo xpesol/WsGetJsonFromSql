@@ -37,7 +37,7 @@ $sku = $_GET["sku"];
 $sqlr = file_get_contents('sql/' . $sSqlrFilePath, FILE_USE_INCLUDE_PATH);
 $aVars = getSqlrVars();
 $sqlr = replace_num_po_in_sql($aVars, $sqlr);
-
+print $sqlr;
 $result = pg_query($sqlr) or die('Echec de la requete : ' . pg_last_error());
 $resultRows = pg_num_rows($result);
 $arrayData = array();
