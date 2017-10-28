@@ -15,4 +15,4 @@ LEFT JOIN po_transport as pt
 ON ph.num_po = pt.num_po
 LEFT JOIN po_detail as pd
 ON pt.num_po = pd.num_po
-WHERE LOWER(SPLIT_PART(ph.num_po, '_', '1')) = LOWER('[[num_po]]')
+WHERE TRIM(LOWER(SPLIT_PART(ph.num_po, '_', '1'))) = TRIM(LOWER(SPLIT_PART('[[num_po]]')))
