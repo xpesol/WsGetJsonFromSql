@@ -8,7 +8,7 @@ fillContainers = function () {
 }
 
 fillD2D_PO_EnteteSyntheseContainer = function (whichNumPo) {
-    var urlToLoad = baseUrlToLoad + '&sqlrfilepath=D2D_PO_EnteteSynthese.sql&num_po' + whichNumPo;
+    var urlToLoad = baseUrlToLoad + '&sqlrfilepath=D2D_PO_EnteteSynthese.sql&num_po=' + whichNumPo;
     $.ajax({
         url: urlToLoad,
         dataType: 'json',
@@ -21,7 +21,7 @@ fillD2D_PO_EnteteSyntheseContainer = function (whichNumPo) {
 }
 
 fillD2D_PO_TracaAmontContainer = function (whichNumPo) {
-    var urlToLoad = baseUrlToLoad + '&sqlrfilepath=D2D_PO_TracaAmont.sql&num_po' + whichNumPo;
+    var urlToLoad = baseUrlToLoad + '&sqlrfilepath=D2D_PO_TracaAmont.sql&num_po=' + whichNumPo;
     $.ajax({
         url: urlToLoad,
         dataType: 'json',
