@@ -113,7 +113,10 @@
 }
 .columns .ui-columns-search
 {
-    text-align:right
+    text-align:right;
+    visibility:hidden ;
+    display:none ;
+
 }
 .columns .ui-columns-search input
 {
@@ -123,7 +126,8 @@
     border:2px solid #ccc;
     background-image:url(../images/search.png);
     background-position:5px center;
-    background-repeat:no-repeat
+    background-repeat:no-repeat;
+
 }
 .columns .ui-columns-search input:focus
 {
