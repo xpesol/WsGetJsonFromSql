@@ -48,7 +48,7 @@
 
 .columns .ui-table tbody{
     font-size:14px
-    font-family:arial;
+        font-family:arial;
 }
 
 .columns .ui-table tbody tr td{
@@ -132,7 +132,8 @@
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1D1D1', endColorstr='#A7A7A8',GradientType=0 );
     padding:10px;
     border-bottom:1px solid #878787;
-    text-align:right
+    text-align:right;
+    display:none ;
 }
 
 .columns .ui-columns-search input{
