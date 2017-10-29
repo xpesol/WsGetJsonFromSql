@@ -9,6 +9,7 @@ fillContainers = function () {
     alert(whichNumPo);
     fillD2D_PO_EnteteSyntheseContainer(whichNumPo);
     fillD2D_PO_TracaAmontContainer(whichNumPo);
+    fillD2D_PO_TracaAvalContainer(whichNumPo);
 }
 
 fillD2D_PO_EnteteSyntheseContainer = function (whichNumPo) {
@@ -31,6 +32,18 @@ fillD2D_PO_TracaAmontContainer = function (whichNumPo) {
         dataType: 'json',
         success: function (json) {
             example2 = $('#D2D_PO_TracaAmontContainer').columns({
+                data: json,
+            });
+        }
+    });
+}
+fillD2D_PO_TracaAvalContainer = function (whichNumPo) {
+    var urlToLoad = baseUrlToLoad + '&sqlrfilepath=D2D_PO_TracaAval.sql&num_po=' + whichNumPo;
+    $.ajax({
+        url: urlToLoad,
+        dataType: 'json',
+        success: function (json) {
+            example2 = $('#D2D_PO_TracaAvalContainer').columns({
                 data: json,
             });
         }
