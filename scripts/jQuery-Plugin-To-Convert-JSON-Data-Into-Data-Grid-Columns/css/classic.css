@@ -133,6 +133,7 @@
     padding:10px;
     border-bottom:1px solid #878787;
     text-align:right;
+    visibility:hidden ;
     display:none ;
 }
 
